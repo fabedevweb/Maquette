@@ -66,7 +66,7 @@ nav a {
 }
 
 .form_Marseille {
-  padding: 12px 55px;
+  padding: 10px 55px;
   font-size: 1em;
   font-weight: 800;
   text-align: start;
@@ -97,7 +97,7 @@ nav a {
 }
 
 .fa-map-marker-alt {
-  padding: 10px 10px;
+  padding: 15px 15px;
   color: black;
   background-color: #f2f2f2;
   border-radius: 10px 0 0 10px;
@@ -113,6 +113,7 @@ ul {
 #filtres {
   display: flex;
   padding-left: 0px;
+  margin-left: 10px;
   font-weight: 700;
 }
 
@@ -126,9 +127,9 @@ ul {
   align-items: center;
   padding-right: 10px;
   margin-right: 20px;
-  border-top: #d9d9d9 2px solid;
-  border-bottom: #d9d9d9 2px solid;
-  border-right: #d9d9d9 2px solid;
+  border-top: #d9d9d9 1px solid;
+  border-bottom: #d9d9d9 1px solid;
+  border-right: #d9d9d9 1px solid;
   border-radius: 20px 20px 20px 20px;
 }
 
@@ -140,7 +141,7 @@ ul {
 .fa-circle {
   color: #deebff;
   position: absolute;
-  font-size: 42px;
+  font-size: 40px;
   margin-right: 10px;
 }
 
@@ -167,6 +168,28 @@ ul {
   padding: 10px 10px;
   margin-right: 10px;
   z-index: 1;
+}
+
+/* INFO */
+
+#info {
+  display: flex;
+  align-items: center;
+}
+
+.fa-info {
+  font-size: 0.7em;
+  border: #d9d9d9 1px solid;
+  width: 15px;
+  height: 18px;
+  border-radius: 50%;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin-left: 10px;
+}
+
+.info_plus {
+  margin-left: 10px;
 }
 
 /* Fin d'organisation des du bloc filtre */
@@ -204,10 +227,13 @@ ul {
 
 /* SECTION HEBERGEMENT */
 
-#body_center {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  justify-content: center;
+#section_article_aside {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#section_article_aside h2 {
+  padding-left: 50px;
 }
 
 section p {
@@ -217,30 +243,31 @@ section p {
 }
 
 #hebergement {
+  flex: 1;
+  padding-top: 20px;
   background-color: #f2f2f2;
   border-radius: 15px;
-  padding: 1px 10px 0px 20px;
 }
 
 #contener_hebergement {
   display: grid;
+  margin-left: 50px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 20px;
+  grid-row-gap: 30px;
 }
 
 .child_contener_hebergement {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
   background-color: white;
-  height: 170px;
-  width: 210px;
+  height: 215px;
+  width: 260px;
   border-radius: 15px;
 }
 
 .hebergement_img {
-  width: 200px;
-  height: 100px;
+  width: 250px;
+  height: 115px;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
   margin-top: 5px;
@@ -260,6 +287,7 @@ section p {
   display: flex;
   flex-direction: column;
   margin-left: 42px;
+  padding-top: 20px;
 }
 
 .fa-chart-line {
@@ -270,13 +298,16 @@ section p {
 #aside_title {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 0 30px 0 30px;
+  justify-content: space-around;
+}
+
+#aside_title h2 {
+  padding-left: 0px;
 }
 
 .aside_populaires_img {
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
   border-radius: 10px 0px 0px 10px;
   object-fit: cover;
   margin-top: 5px;
@@ -288,8 +319,8 @@ section p {
   align-self: center;
   background-color: white;
   border-radius: 15px;
-  width: 85%;
-  margin-bottom: 20px;
+  width: 80%;
+  margin-bottom: 30px;
 }
 
 .aside_populaires_texte {
@@ -300,7 +331,7 @@ section p {
   display: inline-flex;
   font-size: 1em;
   padding-left: 0px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 /* SECTION ACTIVITES */
