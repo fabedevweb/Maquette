@@ -1,0 +1,400 @@
+/* Organisation du BODY */
+
+body {
+  margin: 0px;
+  margin-top: 50px;
+  font-family: "Raleway", sans-serif;
+}
+
+#bloc_page {
+  max-width: 1440px;
+  width: auto;
+  margin: auto;
+}
+
+h1 {
+  font-size: 1.2em;
+}
+
+/* Organisation du HEADER */
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  align-items: flex-end;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.ul_hover {
+  margin-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.ul_hover:hover {
+  border-top: 3px solid #0065fc;
+  padding-top: 30px;
+  color: #0065fc;
+}
+
+.ul_hover2 {
+  color: #0065fc;
+  font-weight: 600;
+}
+/* Fin d'organisation du HEADER */
+
+/*------------------------------*/
+
+/* Organisation du bloc FORM */
+
+.form_champ {
+  display: flex;
+  width: 300px;
+}
+
+.form_en {
+  font-weight: 200;
+}
+
+.form_Marseille {
+  padding: 12px 55px;
+  font-size: 1em;
+  font-weight: 800;
+  text-align: start;
+  padding-left: 15px;
+  border: none;
+  border-top: #f2f2f2 1px solid;
+  border-bottom: #f2f2f2 1px solid;
+}
+
+.form_recherche {
+  padding: 10px 10px;
+  font-size: 1em;
+  font-weight: 300;
+  border: none;
+  background-color: #0065fc;
+  color: white;
+  border-radius: 0 10px 10px 0;
+}
+
+/* Fin d'organisation du bloc FORM */
+
+/*------------------------------*/
+
+/* Les icônes */
+
+.fas {
+  color: #0065fc;
+}
+
+.fa-map-marker-alt {
+  padding: 10px 10px;
+  color: black;
+  background-color: #f2f2f2;
+  border-radius: 10px 0 0 10px;
+}
+/* Fin d'organisation des icônes */
+
+/* Organisation du bloc filtre */
+
+ul {
+  list-style-type: none;
+}
+
+#filtres {
+  display: flex;
+  padding-left: 0px;
+  font-weight: 700;
+}
+
+.child_filtres {
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.filtres_fas {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  margin-right: 20px;
+  border-top: #d9d9d9 2px solid;
+  border-bottom: #d9d9d9 2px solid;
+  border-right: #d9d9d9 2px solid;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.filtres_fas:hover {
+  color: #0065fc;
+  border-right: #0065fc 2px solid;
+}
+
+.fa-circle {
+  color: #deebff;
+  position: absolute;
+  font-size: 42px;
+  margin-right: 10px;
+}
+
+.fa-money-bill-wave {
+  padding: 10px 10px;
+  margin-right: 10px;
+  z-index: 1;
+}
+
+.fa-child {
+  padding-left: 14px;
+  padding-right: 12px;
+  margin-right: 10px;
+  z-index: 1;
+}
+
+.fa-heart {
+  padding: 10px 10px 10px 12px;
+  margin-right: 10px;
+  z-index: 1;
+}
+
+.fa-dog {
+  padding: 10px 10px;
+  margin-right: 10px;
+  z-index: 1;
+}
+
+/* Fin d'organisation des du bloc filtre */
+
+/* Les étoiles */
+
+.fa-star {
+  color: #d9d9d9;
+  font-size: 1em;
+}
+
+/* Le groupe '.stars' positionne les étoiles
+		 les unes à côté des autres sans espacements. */
+.stars {
+  display: inline-flex;
+  font-size: 1em;
+  padding-left: 0px;
+}
+
+/* A l'état :hover sur le parent '.rating',
+		 on force TOUTES les étoiles à passer en jaune. */
+.stars:hover .fa-star {
+  color: #0065fc;
+}
+/* Et si la souris survole une étoile en particulier,
+		 on sélectionne toutes les étoiles qui sont APRÈS celle-ci
+		 grâce à l'opérateur '~' et on les force en GRIS */
+.stars .fa-star:hover ~ .fa-star {
+  color: #d9d9d9;
+}
+
+.rating2 {
+  display: inline-block;
+}
+
+/* SECTION HEBERGEMENT */
+
+#body_center {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: center;
+}
+
+section p {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  font-size: 1em;
+}
+
+#hebergement {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  padding: 1px 10px 0px 20px;
+}
+
+#contener_hebergement {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+}
+
+.child_contener_hebergement {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  background-color: white;
+  height: 170px;
+  width: 210px;
+  border-radius: 15px;
+}
+
+.hebergement_img {
+  width: 200px;
+  height: 100px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.child_contener_hebergement_text {
+  margin-left: 15px;
+}
+
+/* SECTION LES PLUS POPULAIRES */
+
+#aside_populaires {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  width: 417px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 42px;
+}
+
+.fa-chart-line {
+  color: black;
+  font-size: 20px;
+}
+
+#aside_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 30px 0 30px;
+}
+
+.aside_populaires_img {
+  width: 130px;
+  height: 130px;
+  border-radius: 10px 0px 0px 10px;
+  object-fit: cover;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.aside_populaires_child {
+  display: flex;
+  align-self: center;
+  background-color: white;
+  border-radius: 15px;
+  width: 85%;
+  margin-bottom: 20px;
+}
+
+.aside_populaires_texte {
+  margin-left: 20px;
+}
+
+.aside_populaires_texte div {
+  display: inline-flex;
+  font-size: 1em;
+  padding-left: 0px;
+  margin-top: 50px;
+}
+
+/* SECTION ACTIVITES */
+
+#child_section_activites {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#section_activites div img {
+  margin-left: 20px;
+}
+
+/* Section gauche */
+
+.section_activites_img_vieux {
+  width: 300px;
+  height: 390px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.child_section_activites_vieux {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+
+#section_activites_img_pomegues {
+  width: 300px;
+  height: 180px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+#section_activites_img_frioul {
+  width: 300px;
+  height: 110px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.child_section_activites_frioul {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+/* Section droite */
+
+.section_activites_img_calanques {
+  width: 300px;
+  height: 390px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.child_section_activites_calanques {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+
+#section_activites_img_garde {
+  width: 300px;
+  height: 140px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+#section_activites_img_longchamp {
+  width: 300px;
+  height: 155px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.child_section_activites_lonchamp {
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #f2f2f2;
+  height: 220px;
+  margin-top: 60px;
+  padding-top: 30px;
+  padding-left: 240px;
+}
+
+footer div {
+  margin-right: 240px;
+}
