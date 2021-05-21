@@ -1,13 +1,14 @@
-/* Organisation du BODY */
-
+html,
 body {
-  margin: 0px;
-  margin-top: 50px;
-  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 #bloc_page {
@@ -16,43 +17,54 @@ a {
   margin: auto;
 }
 
-h1 {
-  font-size: 1.2em;
-}
-
 /* Organisation du HEADER */
 
 #header {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  height: 100px;
+  width: 100%;
+  line-height: 100px;
 }
 
-nav ul {
-  display: flex;
-  align-items: flex-end;
+.header_logo {
+  display: inline;
+  height: 80%;
+  padding: 0;
+  margin: 0;
 }
 
 nav a {
   color: black;
 }
 
-.ul_hover {
-  margin-right: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+#logo {
+  float: left;
 }
 
-.ul_hover:hover {
+.ul_hover_activites,
+.ul_hover_hebergements {
+  float: right;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.ul_hover_hebergements:hover {
   border-top: 3px solid #0065fc;
-  padding-top: 30px;
   color: #0065fc;
 }
 
-.ul_hover2 {
+.ul_hover_activites:hover {
+  border-top: 3px solid #0065fc;
+  color: #0065fc;
+}
+
+.ul_hover_inscrire {
+  float: right;
   color: #0065fc;
   font-weight: 600;
+  padding: 0;
+  margin-left: 20px;
 }
+
 /* Fin d'organisation du HEADER */
 
 /*------------------------------*/
@@ -113,16 +125,12 @@ nav a {
 
 /* Organisation du bloc filtre */
 
-ul {
-  list-style-type: none;
-  margin-top: 30px;
-}
-
 #filtres {
   display: flex;
   padding-left: 0px;
   margin-left: 10px;
   font-weight: 700;
+  list-style-type: none;
 }
 
 .child_filtres {
@@ -297,10 +305,6 @@ section p {
 
 /* SECTION LES PLUS POPULAIRES */
 
-.populaires_title {
-  font-weight: 700;
-}
-
 #aside_populaires {
   background-color: #f2f2f2;
   border-radius: 15px;
@@ -316,13 +320,13 @@ section p {
   font-size: 20px;
 }
 
-#aside_title {
+#aside_title_ {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-#aside_title h2 {
+#aside_title_ h2 {
   padding-left: 0px;
 }
 
@@ -480,3 +484,177 @@ footer {
 footer div {
   margin-right: 240px;
 }
+
+/* Responsive Web Design Ipad */
+
+@media screen and (max-width: 768px) {
+  #header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 2rem;
+    margin-bottom: 150px;
+  }
+
+  #logo {
+    margin-left: 10%;
+  }
+
+  .ul_hover_hebergements {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .ul_hover_inscrire {
+    text-align: end;
+    margin-right: 10%;
+  }
+
+  .ul_hover_activites,
+  .ul_hover_hebergements {
+    border-bottom: #d9d9d9 5px solid;
+    text-align: center;
+  }
+
+  .ul_hover_activites:hover {
+    border-top: none;
+    border-bottom: #0065fc 5px solid;
+  }
+
+  .ul_hover_hebergements:hover {
+    border-top: none;
+    border-bottom: #0065fc 5px solid;
+  }
+
+  form {
+    width: 90%;
+    margin: auto;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .form_champ {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #filtres {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    justify-items: stretch;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+  }
+
+  .filtres_fas {
+    margin-right: 0px;
+  }
+
+  .filtres_fas:nth-child(2) {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .filtres_fas:nth-child(3) {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .filtres_fas:nth-child(4) {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .filtres_fas:nth-child(5) {
+    grid-row: 3;
+    grid-column: 2;
+  }
+
+  #info {
+    margin-left: 5%;
+  }
+
+  #hebergement {
+    width: 90%;
+    margin: auto;
+    flex: none;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+
+  #contener_hebergement {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0px;
+  }
+
+  .child_contener_hebergement {
+    justify-self: center;
+  }
+
+  .hebergement_title {
+    text-align: center;
+  }
+
+  #aside_populaires {
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 80px 1fr 1fr;
+    grid-template-columns: auto;
+  }
+
+  .aside_populaires_child {
+    justify-self: center;
+    width: 80%;
+  }
+
+  .aside_populaires_child:nth-child(1) {
+    grid-row: 1;
+  }
+
+  #child_section_activites {
+    display: grid;
+    column-gap: 46px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .child_section_activites_calanques{
+    height: 50px;
+    grid-row: 3/4;
+    grid-column: 1;
+  }
+
+  #section_activites_img_calanques{
+    height: 390px;
+  }
+
+  .child_section_activites_garde{
+    grid-row: 3;
+    grid-column: 2;
+  }
+
+  .child_section_activites_lonchamp{
+    grid-row: 4;
+    grid-column: 2;
+  }
+
+  #section_activites{
+    width: 80%;
+    margin: auto;
+  }
+
+
+  /* Responsive Web Design 1024 */
+
+  /* Responsive Web Design Iphone 8 */
+
+  @media screen and (max-width: 375px) body {
+  }

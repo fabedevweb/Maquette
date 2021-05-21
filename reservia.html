@@ -1,27 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="reservia.css"/>
-<link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/14667151b8.js" crossorigin="anonymous"></script>
-<title>Réservia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservia.css"/>
+    <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14667151b8.js" crossorigin="anonymous"></script>
+    <title>Réservia</title>
+</head>
 
 <body>
     <div id="bloc_page">
         <header>
-            <div id="header">
-                <img src="images/logo/Reservia.svg" alt="logo">
-                <nav>
-                    <ul>
-                        <li><a href="#ancre_hebergements" class="ul_hover">Hébergements</a></li>
-                        <li><a href="#ancre_activites" class="ul_hover">Activités</a></li>
-                        <li><a href="#" class="ul_hover2">S'inscrire</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav id="header">
+                <div id="logo">
+                    <img src="images/logo/Reservia.svg" alt="logo" class="header_logo">
+                </div>
+                <a href="#" class="ul_hover_inscrire">S'inscrire</a>
+                <a href="#ancre_activites" class="ul_hover_activites">Activités</a>
+                <a href="#ancre_hebergements" class="ul_hover_hebergements">Hébergements</a>
+            </nav>
         </header>
 
         <form method="POST" action="programme.php">
@@ -154,12 +154,11 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="hebergement_title">Afficher plus</p>
+                        <a href="#" class="hebergement_title">Afficher plus</a>
                     </div>
             </article>
-
             <aside id="aside_populaires">
-                <div id="aside_title">
+                <div id="aside_title_">
                     <h2>Les plus populaires</h2>
                     <i class="fas fa-chart-line"></i>
                 </div>
