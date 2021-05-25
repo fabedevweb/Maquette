@@ -142,6 +142,7 @@ nav a {
 
 #filtres {
   display: flex;
+  margin-top: 40px;
   padding-left: 0px;
   margin-left: 10px;
   font-weight: 700;
@@ -278,7 +279,7 @@ nav a {
 
 #hebergement {
   flex:1;
-  height: 630px;
+  height: auto;
   width: 850px;
   padding-top: 20px;
   background-color: #f2f2f2;
@@ -396,6 +397,8 @@ nav a {
 
 #child_section_activites {
   display: grid;
+  grid:wrap;
+  max-width: 1340px;
   column-gap: 46px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -473,6 +476,7 @@ nav a {
   border-radius: 20px 20px 20px 20px;
   box-shadow: #d9d9d9 6px 6px 6px;
   height: 195px;
+  margin-bottom: 45px;
 }
 
 #section_activites_img_longchamp {
@@ -497,7 +501,6 @@ footer {
   height: 200px;
   margin-top: 60px;
   padding-top: 30px;
-  padding-left: 
 }
 
 #footer_parent{
@@ -512,27 +515,134 @@ footer div {
   margin-right: 240px;
 }
 
-/* Responsive Web Design Ipad */
 
-  /* Responsive Web Design 1024 */
+/* Responsive Web Design Smartphone */
 
-  @media screen and (min-width:1086px) and (max-width:1400px){
-    #bloc_page{
-      width: 90%;
+@media screen and (max-width: 991.98px) {
+    #header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      font-size: 1.5rem;
+      margin-bottom: 150px;
     }
+  
+    #logo {
+      margin-left: 10%;
+    }
+
+    form h1{
+      font-size: 1.9rem;
+    }
+  
+    .ul_hover_hebergements {
+      grid-column: 1;
+      grid-row: 2;
+    }
+  
+    .ul_hover_inscrire {
+      text-align: end;
+      margin-right: 10%;
+    }
+  
+    .ul_hover_activites,
+    .ul_hover_hebergements {
+      border-bottom: #d9d9d9 5px solid;
+      text-align: center;
+    }
+  
+    .ul_hover_activites:hover {
+      border-top: none;
+      border-bottom: #0065fc 5px solid;
+    }
+  
+    .ul_hover_hebergements:hover {
+      border-top: none;
+      border-bottom: #0065fc 5px solid;
+    }
+  
+    form {
+      width: 90%;
+      margin: auto;
+      font-size: 1.4rem;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  
+    .form_champ {
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    #filtres {
+      display: grid;
+      width: 90%;
+      margin: auto;
+      justify-items: stretch;
+      grid-row-gap: 20px;
+      grid-column-gap: 10px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      margin-bottom: 20px;
+      font-size: 1.3rem;
+    }
+  
+    .filtres_fas {
+      margin-right: 0px;
+    }
+  
+    .filtres_fas:nth-child(2) {
+      grid-row: 2;
+      grid-column: 1;
+    }
+  
+    .filtres_fas:nth-child(3) {
+      grid-row: 2;
+      grid-column: 2;
+    }
+  
+    .filtres_fas:nth-child(4) {
+      grid-row: 3;
+      grid-column: 1;
+    }
+  
+    .filtres_fas:nth-child(5) {
+      grid-row: 3;
+      grid-column: 2;
+    }
+  
+    #info {
+      margin-left: 5%;
+    }
+  
     #hebergement {
-      flex: 1;
+      width: 90%;
+      margin: auto;
+      flex: none;
+      margin-bottom: 30px;
       padding-bottom: 20px;
     }
-    
+  
     #contener_hebergement {
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       margin-left: 0px;
     }
-
+  
+    .child_contener_hebergement {
+      justify-self: center;
+    }
+  
+    .hebergement_title {
+      text-align: center;
+    }
+  
     #aside_populaires {
-      height: auto;Ò
+      width: 90%;
+      height: auto;
+      display: grid;
+      grid-template-rows: 80px 1fr 1fr;
+      grid-template-columns: auto;
     }
   
     .aside_populaires_child {
@@ -540,10 +650,17 @@ footer div {
       justify-content: start;
       width: 80%;
     }
-    #child_section_activites{
-    
+  
+    .aside_populaires_child:nth-child(1) {
+      grid-row: 1;
     }
-
+  
+    #child_section_activites {
+      display: grid;
+      column-gap: 46px;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+  
     .child_section_activites_calanques{
       height: 50px;
       grid-row-start: 3;
@@ -567,10 +684,89 @@ footer div {
       grid-row: 4;
       grid-column: 2;
     }
-
+  
+    #section_activites{
+      margin: auto;
+    }
+  
+    footer{
+      display: grid;
+      height: auto;
+      grid-template-columns: 300px 300px;
+      grid-template-rows:1fr 150px;
+      margin: auto;
+      padding: auto;
+    }
+  
+    #footer1, #footer2, #footer3{
+      margin:0;
+    }
+  
+}
+  
+@media screen and (max-width: 575.98px){
+  
+  #header{
+    line-height: 50px;
+    margin-bottom: 30px;
   }
 
-@media screen and (min-width:769px) and (max-width: 1124px){
+  #header a{
+    font-size: 1.2rem;
+  }
+
+  form{
+    text-align: left;
+  }
+  form h1{
+    font-size: 1.3rem;
+  }
+  form p{
+    font-size: 1rem;
+  }
+
+  .form_Marseille{
+    padding: 0px;
+  }
+
+  .fa-search{
+    visibility: visible;
+    position: relative;
+    background-color: #0065fc;
+    padding: 20px;
+    color: white;
+  }
+
+  .form_recherche{
+    visibility: hidden;
+  }
+
+  #filtres{
+    font-size: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .filtres_fas:nth-child(5){
+  grid-row: 4;
+  grid-column: 1;
+  }
+
+  #aside_populaires{
+    order: 1;
+  }
+
+  #hebergement{
+    order: 2;
+  }
+
+  #section_activites{
+    order: 3;
+  }
+}
+
+
+@media screen and (max-width: 1199.98px){
   
   #bloc_page{
     width: 90%;
@@ -602,8 +798,7 @@ footer div {
   #child_section_activites {
     display: grid;
     column-gap: 46px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+
   }
 
   .child_section_activites_calanques{
@@ -633,127 +828,23 @@ footer div {
 }
 
 
-@media screen and (max-width: 768px) {
-  #header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    font-size: 2rem;
-    margin-bottom: 150px;
-  }
-
-  #logo {
-    margin-left: 10%;
-  }
-
-  .ul_hover_hebergements {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .ul_hover_inscrire {
-    text-align: end;
-    margin-right: 10%;
-  }
-
-  .ul_hover_activites,
-  .ul_hover_hebergements {
-    border-bottom: #d9d9d9 5px solid;
-    text-align: center;
-  }
-
-  .ul_hover_activites:hover {
-    border-top: none;
-    border-bottom: #0065fc 5px solid;
-  }
-
-  .ul_hover_hebergements:hover {
-    border-top: none;
-    border-bottom: #0065fc 5px solid;
-  }
-
-  form {
+@media screen and (max-width:1399.98px){
+  #bloc_page{
     width: 90%;
-    margin: auto;
-    font-size: 1.4rem;
-    text-align: center;
-    margin-bottom: 50px;
   }
-
-  .form_champ {
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  #filtres {
-    display: grid;
-    width: 90%;
-    margin: auto;
-    justify-items: stretch;
-    grid-row-gap: 20px;
-    grid-column-gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-bottom: 20px;
-    font-size: 1.3rem;
-  }
-
-  .filtres_fas {
-    margin-right: 0px;
-  }
-
-  .filtres_fas:nth-child(2) {
-    grid-row: 2;
-    grid-column: 1;
-  }
-
-  .filtres_fas:nth-child(3) {
-    grid-row: 2;
-    grid-column: 2;
-  }
-
-  .filtres_fas:nth-child(4) {
-    grid-row: 3;
-    grid-column: 1;
-  }
-
-  .filtres_fas:nth-child(5) {
-    grid-row: 3;
-    grid-column: 2;
-  }
-
-  #info {
-    margin-left: 5%;
-  }
-
   #hebergement {
-    width: 90%;
-    margin: auto;
-    flex: none;
-    margin-bottom: 30px;
+    flex: 1;
     padding-bottom: 20px;
   }
-
+  
   #contener_hebergement {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     margin-left: 0px;
   }
 
-  .child_contener_hebergement {
-    justify-self: center;
-  }
-
-  .hebergement_title {
-    text-align: center;
-  }
-
   #aside_populaires {
-    width: 90%;
-    height: auto;
-    display: grid;
-    grid-template-rows: 80px 1fr 1fr;
-    grid-template-columns: auto;
+    height: auto;Ò
   }
 
   .aside_populaires_child {
@@ -762,24 +853,27 @@ footer div {
     width: 80%;
   }
 
-  .aside_populaires_child:nth-child(1) {
-    grid-row: 1;
-  }
-
-  #child_section_activites {
-    display: grid;
-    column-gap: 46px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+  #child_section_activites{
+    grid-template-rows:1fr 1fr 1fr 1fr;
   }
 
   .child_section_activites_calanques{
     height: 50px;
-    grid-row-start: 3;
-    grid-row-end: span 4;
-    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column: 3;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: #d9d9d9 6px 6px 6px;
+    box-shadow: #443c3c 6px 6px 6px;
+    height: 445px;
+  }
+
+  .child_section_activites_vieux{
+    height: 50px;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column: 2;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: #443c3c 6px 6px 6px;
     height: 445px;
   }
 
@@ -787,90 +881,34 @@ footer div {
     height: 390px;
   }
 
+  .child_section_activites_lonchamp{
+    grid-row: 4;
+    grid-column: 3;
+  }
+
   .child_section_activites_garde{
+    grid-row: 3;
+    grid-column: 3;
+  }
+
+  .child_section_activites_pomegues{
     grid-row: 3;
     grid-column: 2;
   }
 
-  .child_section_activites_lonchamp{
+  .child_section_activites_frioul{
     grid-row: 4;
     grid-column: 2;
   }
 
-  #section_activites{
+  #footer_parent{
+    display: flex;
+    height: 200px;
+    align-items:center;
+    width: 1258px;
     margin: auto;
   }
 
-  footer{
-    display: grid;
-    height: auto;
-    grid-template-columns: 300px 300px;
-    grid-template-rows:1fr 150px;
-    margin: auto;
-    padding: auto;
-  }
+}
 
-  #footer1, #footer2, #footer3{
-    margin:0;
-  }
 
-  /* Responsive Web Design Iphone 8 */
-
-  @media screen and (max-width:375px){
-    #header{
-      line-height: 50px;
-      margin-bottom: 30px;
-    }
-
-    #header a{
-      font-size: 1.2rem;
-    }
-
-    form{
-      text-align: left;
-    }
-    form h1{
-      font-size: 1.3rem;
-    }
-    form p{
-      font-size: 1rem;
-    }
-
-    .form_Marseille{
-      padding: 0px;
-    }
-
-    .fa-search{
-      visibility: visible;
-      background-color: #0065fc;
-      color: white;
-    }
-
-    .form_recherche{
-      visibility: hidden;
-    }
-
-    #filtres{
-      font-size: 1rem;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-
-    .filtres_fas:nth-child(5){
-    grid-row: 4;
-    grid-column: 1;
-    }
-
-    #aside_populaires{
-      order: 1;
-    }
-
-    #hebergement{
-      order: 2;
-    }
-
-    #section_activites{
-      order: 3;
-    }
-
-  }
