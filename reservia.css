@@ -682,6 +682,9 @@ footer div {
 }
 
 @media screen and (max-width: 991.98px) {
+  #bloc_page {
+    width: 100%;
+  }
   #header {
     display: grid;
     grid-template-columns: 1fr 1fr;
