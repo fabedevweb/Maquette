@@ -397,7 +397,6 @@ nav a {
 
 #child_section_activites {
   display: grid;
-  grid: wrap;
   max-width: 1340px;
   column-gap: 46px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
