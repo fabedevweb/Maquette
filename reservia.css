@@ -1069,6 +1069,11 @@ footer div {
     border-radius: 15px 15px;
   }
 
+  .form_Marseille {
+    padding: 0px;
+    width: 100px;
+  }
+
   .fa-map-marker-alt {
     padding: 15px 20px;
     border-radius: 15px 0 0 15px;
@@ -1076,6 +1081,7 @@ footer div {
 
   .form_Marseille {
     border: none;
+    font-size: 1.2rem;
   }
 
   button {
@@ -1209,5 +1215,12 @@ footer div {
 
   footer {
     height: 600px;
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  .form_Marseille {
+    width: 200px;
+    font-size: 1.2rem;
   }
 }
