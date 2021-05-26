@@ -878,6 +878,10 @@ footer div {
 }
 
 @media screen and (max-width: 767.98px) {
+  #bloc_page {
+    width: 100%;
+  }
+
   #header {
     line-height: 50px;
     margin-bottom: 30px;
@@ -1047,6 +1051,10 @@ footer div {
 }
 
 @media screen and (max-width: 575.98px) {
+  #bloc_page {
+    width: 100%;
+  }
+
   #header {
     line-height: 50px;
     margin-bottom: 30px;
@@ -1219,6 +1227,9 @@ footer div {
 }
 
 @media screen and (max-width: 374.98px) {
+  #bloc_page {
+    width: 100%;
+  }
   .form_Marseille {
     width: 200px;
     font-size: 1.2rem;
