@@ -630,6 +630,10 @@ footer div {
     background-color: gold;
   }
 
+  nav p {
+    position: relative;
+  }
+
   #hebergement {
     flex: 1;
     padding-bottom: 20px;
