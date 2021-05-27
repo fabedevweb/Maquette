@@ -151,35 +151,31 @@ nav a {
 
 .nav_economie {
   display: flex;
-  width: 150px;
+  width: 180px;
   height: 30px;
-  margin-right: 20px;
+  margin-right: 50px;
   align-items: center;
-}
-
-.nav_economie p {
-  margin-bottom: 20px;
 }
 
 .nav_familial {
   display: flex;
-  width: 130px;
+  width: 150px;
   height: 30px;
-  margin-right: 20px;
+  margin-right: 50px;
   align-items: center;
 }
 
 .nav_romantique {
   display: flex;
-  width: 165px;
+  width: 180px;
   height: 30px;
-  margin-right: 22px;
+  margin-right: 50px;
   align-items: center;
 }
 
 .nav_animaux {
   display: flex;
-  width: 220px;
+  width: 250px;
   height: 30px;
   align-items: center;
 }
