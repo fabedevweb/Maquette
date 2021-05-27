@@ -157,6 +157,10 @@ nav a {
   align-items: center;
 }
 
+.nav_economie p {
+  margin-bottom: 20px;
+}
+
 .nav_familial {
   display: flex;
   width: 130px;
@@ -611,22 +615,6 @@ footer div {
 @media screen and (max-width: 1199.98px) {
   #bloc_page {
     width: 90%;
-  }
-
-  .nav_animaux {
-    align-items: center;
-  }
-
-  .nav_romantique {
-    align-items: center;
-  }
-
-  .nav_familial {
-    align-items: center;
-  }
-
-  .nav_economie {
-    align-items: center;
   }
 
   #hebergement {
