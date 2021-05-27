@@ -967,7 +967,7 @@ footer div {
     color: white;
     background-color: #0065fc;
     border-radius: 15px 15px 15px 15px;
-    padding: 16px;
+    padding: 17px;
   }
 
   #filtres {
@@ -1160,15 +1160,6 @@ footer div {
   .form_recherche {
     visibility: hidden;
     padding: 0;
-  }
-
-  .fa-search {
-    visibility: visible;
-    position: relative;
-    color: white;
-    background-color: #0065fc;
-    border-radius: 15px 15px 15px 15px;
-    padding: 16px;
   }
 
   #filtre {
