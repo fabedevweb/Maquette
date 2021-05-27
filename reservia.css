@@ -612,6 +612,23 @@ footer div {
   #bloc_page {
     width: 90%;
   }
+
+  .nav_animaux {
+    align-items: center;
+  }
+
+  .nav_romantique {
+    align-items: center;
+  }
+
+  .nav_familial {
+    align-items: center;
+  }
+
+  .nav_economie {
+    align-items: center;
+  }
+
   #hebergement {
     flex: 1;
     padding-bottom: 20px;
@@ -691,6 +708,7 @@ footer div {
   #bloc_page {
     width: 100%;
   }
+
   #header {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -772,21 +790,25 @@ footer div {
   .nav_economie {
     grid-row: 2;
     grid-column: 1;
+    align-items: center;
   }
 
   .nav_familial {
     grid-row: 2;
     grid-column: 2;
+    align-items: center;
   }
 
   .nav_animaux {
     grid-row: 3;
     grid-column: 1;
+    align-items: center;
   }
 
   .nav_romantique {
     grid-column: 2;
     grid-row: 3;
+    align-items: center;
   }
 
   .filtres_fas {
@@ -971,6 +993,22 @@ footer div {
 
   .fa-circle {
     padding-top: 0px;
+  }
+
+  .nav_animaux {
+    align-items: center;
+  }
+
+  .nav_romantique {
+    align-items: center;
+  }
+
+  .nav_familial {
+    align-items: center;
+  }
+
+  .nav_economie {
+    align-items: center;
   }
 
   .filtres_fas:nth-child(5) {
@@ -1161,21 +1199,25 @@ footer div {
   .nav_economie {
     grid-row: 2;
     grid-column: 1;
+    align-items: center;
   }
 
   .nav_romantique {
     grid-row: 3;
     grid-column: 1;
+    align-items: center;
   }
 
   .nav_animaux {
     grid-row: 4;
     grid-column: 1;
+    align-items: center;
   }
 
   .nav_familial {
     grid-row: 2;
     grid-column: 2;
+    align-items: center;
   }
 
   .filtres_fas:nth-child(5) {
@@ -1302,6 +1344,22 @@ footer div {
 
   .fa-circle {
     padding-top: 0px;
+  }
+
+  .nav_animaux {
+    align-items: center;
+  }
+
+  .nav_romantique {
+    align-items: center;
+  }
+
+  .nav_familial {
+    align-items: center;
+  }
+
+  .nav_economie {
+    align-items: center;
   }
 
   #aside_title_ {
