@@ -632,6 +632,8 @@ footer div {
 
   nav p {
     position: relative;
+    padding: 0px;
+    font-weight: 700;
   }
 
   #hebergement {
