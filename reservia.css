@@ -144,6 +144,7 @@ nav a {
 }
 
 .fa-circle {
+  position: absolute;
   color: #deebff;
   padding-top: 0px;
   font-size: 1.5rem;
@@ -153,7 +154,7 @@ nav a {
   display: flex;
   width: 180px;
   height: 30px;
-  margin-right: 50px;
+  margin-right: 20px;
   align-items: center;
 }
 
@@ -161,7 +162,7 @@ nav a {
   display: flex;
   width: 150px;
   height: 30px;
-  margin-right: 50px;
+  margin-right: 20px;
   align-items: center;
 }
 
@@ -169,7 +170,7 @@ nav a {
   display: flex;
   width: 180px;
   height: 30px;
-  margin-right: 50px;
+  margin-right: 22px;
   align-items: center;
 }
 
