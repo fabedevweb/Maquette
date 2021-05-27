@@ -97,8 +97,8 @@ nav a {
   text-align: start;
   padding-left: 15px;
   border: none;
-  border-top: #f2f2f2 1px solid;
-  border-bottom: #f2f2f2 1px solid;
+  border-top: #f2f2f2 2px solid;
+  border-bottom: #f2f2f2 2px solid;
 }
 
 .fa-search {
@@ -140,66 +140,75 @@ nav a {
 
 /* Organisation du bloc filtre */
 
-#filtres {
-  display: flex;
-  margin-top: 40px;
-  padding-left: 0px;
-  margin-left: 10px;
-  font-weight: 700;
-  list-style-type: none;
-}
-
-.child_filtres {
-  padding-right: 20px;
-  padding-top: 10px;
-}
-
-.filtres_fas {
-  display: flex;
-  align-items: center;
-  padding-right: 10px;
-  margin-right: 20px;
-  border-top: #d9d9d9 1px solid;
-  border-bottom: #d9d9d9 1px solid;
-  border-right: #d9d9d9 1px solid;
-  border-radius: 20px 20px 20px 20px;
-}
-
+/*
 .filtres_fas:hover {
   color: #0065fc;
   transform: scale(1.1);
 }
+*/
+
+.fa-stack {
+  z-index: 1;
+  font-size: 1.3rem;
+}
 
 .fa-circle {
   color: #deebff;
+  padding-top: 0px;
+}
+
+.nav_economie {
+  display: flex;
+  width: 150px;
+  height: 30px;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.nav_familial {
+  display: flex;
+  width: 130px;
+  height: 30px;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.nav_romantique {
+  display: flex;
+  width: 165px;
+  height: 30px;
+  margin-right: 22px;
+  align-items: center;
+}
+
+.nav_animaux {
+  display: flex;
+  width: 220px;
+  height: 30px;
+  align-items: center;
+}
+
+nav p {
   position: absolute;
-  font-size: 40px;
-  margin-right: 10px;
+  padding: 8px 20px 8px 30px;
+  margin-left: 20px;
+  border: #d9d9d9 2px solid;
+  border-radius: 0px 50px 50px 0px;
+  font-weight: 700;
 }
 
-.fa-money-bill-wave {
-  padding: 10px 10px;
-  margin-right: 10px;
-  z-index: 1;
+#p_filtre {
+  position: relative;
+  border: none;
+  padding-left: 0;
+  margin-left: 0;
 }
 
-.fa-child {
-  padding-left: 14px;
-  padding-right: 12px;
-  margin-right: 10px;
-  z-index: 1;
-}
-
-.fa-heart {
-  padding: 10px 10px 10px 12px;
-  margin-right: 10px;
-  z-index: 1;
-}
-
-.fa-dog {
-  padding: 10px 10px;
-  margin-right: 10px;
-  z-index: 1;
+#filtre {
+  display: flex;
+  height: auto;
+  align-items: center;
+  flex: wrap;
 }
 
 /* INFO */
@@ -751,16 +760,36 @@ footer div {
     border: none;
   }
 
-  #filtres {
+  #filtre {
     display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 20px 70px 70px;
     width: 90%;
     margin: auto;
-    justify-items: stretch;
-    grid-row-gap: 20px;
-    grid-column-gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-bottom: 20px;
+  }
+
+  .fa-circle {
+    padding-top: 1px;
+  }
+
+  .nav_economie {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .nav_familial {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .nav_animaux {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .nav_romantique {
+    grid-column: 2;
+    grid-row: 3;
   }
 
   .filtres_fas {
@@ -943,6 +972,10 @@ footer div {
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 
+  .fa-circle {
+    padding-top: 0px;
+  }
+
   .filtres_fas:nth-child(5) {
     grid-row: 4;
     grid-column: 1;
@@ -1002,6 +1035,10 @@ footer div {
   #section_activites_img_longchamp {
     width: 334px;
     height: 130px;
+  }
+
+  #section_activites_img_garde {
+    object-position: top;
   }
 
   .child_section_activites_vieux,
@@ -1081,7 +1118,7 @@ footer div {
   }
 
   .form_Marseille {
-    padding: 0px;
+    padding: 15px;
     width: 100px;
   }
 
@@ -1114,10 +1151,34 @@ footer div {
     padding: 16px;
   }
 
-  #filtres {
+  #filtre {
     font-size: 1rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 20px 50px 50px 50px;
+  }
+
+  .fa-circle {
+    padding-top: 0px;
+  }
+
+  .nav_economie {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .nav_romantique {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .nav_animaux {
+    grid-row: 4;
+    grid-column: 1;
+  }
+
+  .nav_familial {
+    grid-row: 2;
+    grid-column: 2;
   }
 
   .filtres_fas:nth-child(5) {
@@ -1132,10 +1193,9 @@ footer div {
   }
 
   #aside_title_ {
-    width: auto;
+    width: 80%;
     justify-content: space-between;
-    margin-left: 90px;
-    margin-right: 90px;
+    margin: auto;
   }
 
   .aside_populaires_child {
@@ -1148,17 +1208,16 @@ footer div {
     background-color: white;
   }
 
+  #ancre_hebergements {
+    margin-left: 0px;
+  }
+
   .hebergement_img {
     width: 325px;
   }
 
   .child_contener_hebergement {
     width: 334px;
-  }
-
-  #ancre_hebergements {
-    width: auto;
-    margin-left: 53px;
   }
 
   #contener_hebergement {
@@ -1221,11 +1280,17 @@ footer div {
   }
 
   .hebergement_afficher_plus {
-    margin-left: 53px;
+    margin-left: 0px;
   }
 
   footer {
     height: 600px;
+  }
+
+  #footer1,
+  #footer2,
+  #footer3 {
+    width: 300px;
   }
 }
 
@@ -1236,5 +1301,22 @@ footer div {
   .form_Marseille {
     width: 200px;
     font-size: 1.2rem;
+  }
+
+  .fa-circle {
+    padding-top: 0px;
+  }
+
+  #aside_title_ {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #ancre_hebergements {
+    margin-left: 0px;
+  }
+
+  .hebergement_afficher_plus {
+    margin-left: 0px;
   }
 }
