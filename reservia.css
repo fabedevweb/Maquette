@@ -140,13 +140,6 @@ nav a {
 
 /* Organisation du bloc filtre */
 
-/*
-.filtres_fas:hover {
-  color: #0065fc;
-  transform: scale(1.1);
-}
-*/
-
 .fa-stack {
   z-index: 1;
   font-size: 1.3rem;
@@ -155,6 +148,7 @@ nav a {
 .fa-circle {
   color: #deebff;
   padding-top: 0px;
+  font-size: 1.5rem;
 }
 
 .nav_economie {
@@ -193,7 +187,7 @@ nav p {
   padding: 8px 20px 8px 30px;
   margin-left: 20px;
   border: #d9d9d9 2px solid;
-  border-radius: 0px 50px 50px 0px;
+  border-radius: 10px 50px 50px 15px;
   font-weight: 700;
 }
 
@@ -208,7 +202,12 @@ nav p {
   display: flex;
   height: auto;
   align-items: center;
-  flex: wrap;
+}
+
+#filtre div:hover {
+  color: #0065fc;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 /* INFO */
