@@ -638,13 +638,11 @@ footer div {
     height: 45px;
   }
 
-  .fa-map-marker-alt {
-  }
-
   .form_champ {
     width: 400px;
+    height: 45px;
     border: #f2f2f2 1px solid;
-    border-radius: 15px;
+    border-radius: 10px;
   }
 
   #filtre {
