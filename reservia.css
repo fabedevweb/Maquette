@@ -627,6 +627,7 @@ footer div {
 
   .form_Marseille {
     border: none;
+    border: #0065fc 1px solid;
   }
 
   #filtre {
@@ -653,6 +654,10 @@ footer div {
     grid-template-columns: 20px 1fr;
     grid-template-rows: 1fr;
     height: 100px;
+  }
+
+  .fa-stack {
+    margin-top: 1px;
   }
 
   #hebergement {
@@ -783,7 +788,8 @@ footer div {
   }
 
   .form_champ {
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
 
   .form_champ {
@@ -801,12 +807,16 @@ footer div {
     display: grid;
     grid-template-columns: 250px 1fr;
     grid-template-rows: 20px 70px 70px;
-    width: 90%;
+    width: 80%;
     margin: auto;
   }
 
   .fa-circle {
     padding-top: 1px;
+  }
+
+  .fa-stack {
+    margin-top: 0px;
   }
 
   .nav_economie {
@@ -858,7 +868,7 @@ footer div {
   }
 
   #info {
-    width: 90%;
+    width: 80%;
     margin: auto;
   }
 
@@ -972,13 +982,14 @@ footer div {
 
   form {
     text-align: left;
-    margin-top: 50px;
+    width: 80%;
   }
 
   .form_champ {
     border-top: #f2f2f2 1px solid;
     border-bottom: #f2f2f2 1px solid;
     border-radius: 15px 15px;
+    width: auto;
   }
 
   .fa-map-marker-alt {
@@ -1006,7 +1017,7 @@ footer div {
     color: white;
     background-color: #0065fc;
     border-radius: 15px 15px 15px 15px;
-    padding: 17px;
+    padding: 18px;
   }
 
   #filtres {
@@ -1017,6 +1028,10 @@ footer div {
 
   .fa-circle {
     padding-top: 0px;
+  }
+
+  .fa-stack {
+    margin-top: 0px;
   }
 
   .nav_animaux {
@@ -1214,6 +1229,10 @@ footer div {
     padding-top: 0px;
   }
 
+  .fa-stack {
+    margin-top: 0px;
+  }
+
   .nav_economie {
     grid-row: 2;
     grid-column: 1;
@@ -1364,6 +1383,10 @@ footer div {
 
   .fa-circle {
     padding-top: 0px;
+  }
+
+  .fa-stack {
+    margin-top: 0px;
   }
 
   #filtre {
