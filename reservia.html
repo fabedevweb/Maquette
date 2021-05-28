@@ -24,21 +24,15 @@
             </nav>
         </header>
 
-        <form method="POST" action="programme.php">
+        <form method="GET" action="programme.php">
             <h1 class="form_trouver">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="form_en">En plein centre ville ou en pleine nature</p>
-            <p class="form_champ">
+            <div class="form_champ">
                 <i class="fas fa-map-marker-alt"></i>
-                <input class="form_Marseille" type="search" value="Marseille, France"/>
-                <button class="form_recherche" type="submit"><i class="fas fa-search"></i>Rechercher</button>
-            </p>
+                <input class="form_Marseille" type="text" value="Marseille, France"/>
+                <button class="form_recherche" ><i class="fas fa-search"></i>Rechercher</button>
+            </div>
         </form>
-
-        <label for="site-search">Search the site:</label>
-        <input type="search" id="site-search" name="q"
-            aria-label="Search through site content">
-
-        <button>Search</button>
     
         <nav id="filtre">
             <p id="p_filtre">Filtre</p>
