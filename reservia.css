@@ -94,7 +94,7 @@ h1 {
 }
 
 .form_Marseille {
-  padding: 10px 55px;
+  padding-right: 55px;
   font-size: 1em;
   font-weight: 800;
   text-align: start;
@@ -642,11 +642,6 @@ footer div {
     border: none;
   }
 
-  .form_recherche {
-    background-color: rgb(255, 0, 157);
-    color: black;
-  }
-
   #filtre {
     display: block;
     display: grid;
@@ -1033,7 +1028,7 @@ footer div {
     color: white;
     background-color: #0065fc;
     border-radius: 15px 15px 15px 15px;
-    padding: 15px;
+    padding: 18px;
   }
 
   #filtres {
