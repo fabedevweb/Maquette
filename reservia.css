@@ -81,6 +81,10 @@ nav a {
 
 /* Organisation du bloc FORM */
 
+h1 {
+  font-size: 1.5rem;
+}
+
 .form_champ {
   display: flex;
   width: 300px;
@@ -639,8 +643,7 @@ footer div {
 
   .form_champ {
     width: 400px;
-
-    border: #f2f2f2 2px solid;
+    border: #f2f2f2 1px solid;
     border-radius: 15px;
   }
 
