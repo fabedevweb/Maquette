@@ -524,7 +524,7 @@ footer div {
   margin-right: 240px;
 }
 
-/* Responsive Web Design Smartphone */
+/* BreakPoints Responsive Web Design */
 
 @media screen and (max-width: 1399.98px) {
   #bloc_page {
@@ -627,19 +627,6 @@ footer div {
 
   form h1 {
     font-size: 1.5rem;
-  }
-
-  .form_champ {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    border-top: #f2f2f2 1px solid;
-    border-bottom: #f2f2f2 1px solid;
-    border-radius: 10px 0 0 10px;
-  }
-
-  .form_Marseille {
-    border: none;
   }
 
   #filtre {
@@ -804,7 +791,6 @@ footer div {
     display: flex;
     width: 90%;
     margin: auto;
-    border-radius: 10px;
   }
 
   .form_Marseille {
@@ -1026,7 +1012,7 @@ footer div {
     color: white;
     background-color: #0065fc;
     border-radius: 15px 15px 15px 15px;
-    padding: 18px;
+    padding: 17px;
   }
 
   #filtres {
@@ -1405,7 +1391,7 @@ footer div {
   #filtre {
     display: grid;
     grid-template-columns: 190px 150px;
-    grid-template-rows: 20px 70px 70px;
+    grid-template-rows: 20px 50px 50px 50px;
     width: 90%;
     margin: auto;
   }
