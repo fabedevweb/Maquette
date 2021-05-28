@@ -631,9 +631,19 @@ footer div {
   }
 
   nav p {
+    position: relative;
     padding-top: 10px;
     font-weight: 700;
     margin: 0px;
+    border: none;
+    border: #0065fc 1px solid;
+  }
+
+  .nav_economie {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    grid-template-rows: 1fr;
+    height: 40px;
   }
 
   #hebergement {
