@@ -86,7 +86,9 @@ h1 {
 
 .form_champ {
   display: flex;
-  width: 300px;
+  max-width: 401px;
+  min-width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .form_en {
@@ -99,7 +101,7 @@ h1 {
   font-weight: 800;
   text-align: start;
   padding-left: 15px;
-  border: ridge 1px;
+  border: 1px solid transparent;
 }
 
 .fa-search {
