@@ -6,6 +6,12 @@ body {
   padding: 0;
 }
 
+#bloc_page {
+  max-width: 1340px;
+  min-width: 375px;
+  margin: auto;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -18,12 +24,6 @@ h3 {
 
 section p {
   font-size: 0.9rem;
-}
-
-#bloc_page {
-  max-width: 1340px;
-  width: auto;
-  margin: auto;
 }
 
 /* Organisation du HEADER */
@@ -531,7 +531,7 @@ footer div {
   #filtre {
     display: block;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 50px 190px 160px 190px 260px;
     grid-template-rows: 1;
   }
 
@@ -625,9 +625,8 @@ footer div {
   #filtre {
     display: block;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1;
-    background-color: gold;
+    grid-template-columns: 50px 190px 160px 190px 260px;
+    grid-template-rows: 1fr;
   }
 
   nav p {
@@ -636,10 +635,13 @@ footer div {
     font-weight: 700;
     margin: 0px;
     border: none;
-    border: #0065fc 1px solid;
+    border: #d9d9d9 2px solid;
   }
 
-  .nav_economie {
+  .nav_economie,
+  .nav_familial,
+  .nav_romantique,
+  .nav_animaux {
     display: grid;
     grid-template-columns: 20px 1fr;
     grid-template-rows: 1fr;
