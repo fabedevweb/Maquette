@@ -642,6 +642,10 @@ footer div {
     border: none;
   }
 
+  .form_recherche {
+    border: #0065fc 1px solid;
+  }
+
   #filtre {
     display: block;
     display: grid;
@@ -749,7 +753,7 @@ footer div {
 
 @media screen and (max-width: 991.98px) {
   #bloc_page {
-    width: 90%;
+    width: 100%;
   }
 
   #header {
@@ -759,6 +763,7 @@ footer div {
     font-size: 1.2rem;
     line-height: 40px;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   #logo {
@@ -803,6 +808,7 @@ footer div {
     display: flex;
     width: 90%;
     margin: auto;
+    border-radius: 10px;
   }
 
   .form_Marseille {
