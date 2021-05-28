@@ -631,8 +631,8 @@ footer div {
   }
 
   nav p {
-    position: relative;
-    padding: 0px;
+    position: absolute;
+    padding-top: 10px;
     font-weight: 700;
   }
 
