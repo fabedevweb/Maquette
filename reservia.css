@@ -633,16 +633,17 @@ footer div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    border-top: #f2f2f2 1px solid;
+    border-bottom: #f2f2f2 1px solid;
+    border-radius: 10px 0 0 10px;
   }
 
   .form_Marseille {
     border: none;
-    border-top: #f2f2f2 1px solid;
-    border-bottom: #f2f2f2 1px solid;
   }
 
   .form_recherche {
-    background-color: aqua;
+    background-color: rgb(255, 0, 157);
     color: black;
   }
 
@@ -804,21 +805,13 @@ footer div {
   }
 
   .form_champ {
+    display: flex;
     width: 90%;
     margin: auto;
   }
 
-  .form_champ {
-    border-top: #f2f2f2 1px solid;
-    border-bottom: #f2f2f2 1px solid;
-    border-left: #f2f2f2 1px solid;
-    border-right: #f2f2f2 1px solid;
-    border-radius: 15px 15px;
-  }
-
   .form_Marseille {
     flex: 1;
-    border: none;
   }
 
   .form_recherche {
