@@ -629,6 +629,10 @@ footer div {
     font-size: 1.5rem;
   }
 
+  .form_Marseille {
+    border: inset 1px solid;
+  }
+
   #filtre {
     display: block;
     display: grid;
@@ -1161,16 +1165,6 @@ footer div {
 }
 
 @media screen and (max-width: 575.98px) {
-  body {
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-  }
-
-  #bloc_page {
-    margin: 0 auto;
-  }
-
   #header {
     line-height: 50px;
     margin-bottom: 30px;
@@ -1182,6 +1176,7 @@ footer div {
 
   form {
     text-align: left;
+    width: 90%;
   }
 
   .form_champ {
@@ -1217,7 +1212,7 @@ footer div {
 
   #filtre {
     font-size: 1rem;
-    grid-template-columns: 220px 1fr;
+    grid-template-columns: 200px 1fr;
     grid-template-rows: 20px 50px 50px 50px;
   }
 
@@ -1256,6 +1251,10 @@ footer div {
   .filtres_fas:nth-child(5) {
     grid-row: 4;
     grid-column: 1;
+  }
+
+  #section_article_aside {
+    width: 100%;
   }
 
   #aside_populaires {
@@ -1366,10 +1365,9 @@ footer div {
   }
 }
 
-@media screen and (max-width: 374.98px) {
+@media screen and (max-width: 375px) {
   #bloc_page {
     width: 100%;
-    min-width: 375px;
   }
 
   .form_Marseille {
