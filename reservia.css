@@ -99,7 +99,7 @@ h1 {
   font-weight: 800;
   text-align: start;
   padding-left: 15px;
-  border: #f2f2f2 1px solid;
+  border: ridge 1px;
 }
 
 .fa-search {
@@ -627,14 +627,6 @@ footer div {
 
   form h1 {
     font-size: 1.5rem;
-  }
-
-  .form_Marseille {
-    border: inset 1px #f2f2f2;
-  }
-
-  .form_recherche {
-    background-color: aqua;
   }
 
   #filtre {
