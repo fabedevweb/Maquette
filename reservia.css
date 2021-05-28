@@ -629,6 +629,12 @@ footer div {
     font-size: 1.5rem;
   }
 
+  .form_champ {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
   .form_Marseille {
     border: none;
     border-top: #f2f2f2 1px solid;
@@ -636,7 +642,8 @@ footer div {
   }
 
   .form_recherche {
-    height: 45px;
+    background-color: aqua;
+    color: black;
   }
 
   #filtre {
