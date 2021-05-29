@@ -104,6 +104,18 @@ h1 {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.form_Marseillebis {
+  color: #0065fc;
+  padding-right: 55px;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 1em;
+  font-weight: 800;
+  text-align: start;
+  padding-left: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .fa-search {
   position: absolute;
   visibility: hidden;
