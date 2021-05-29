@@ -86,8 +86,6 @@ h1 {
 
 .form_champ {
   display: flex;
-  max-width: 300px;
-  min-width: 300px;
   border: 1px solid transparent;
 }
 
