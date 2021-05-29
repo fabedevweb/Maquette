@@ -88,7 +88,7 @@ h1 {
   display: flex;
   max-width: 300px;
   min-width: 300px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
 }
 
 .form_en {
@@ -103,7 +103,7 @@ h1 {
   font-weight: 800;
   text-align: start;
   padding-left: 15px;
-  border: 1px solid transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .fa-search {
@@ -149,6 +149,7 @@ h1 {
 .fa-stack {
   z-index: 1;
   font-size: 1.3rem;
+  margin-top: 1px;
 }
 
 .fa-circle {
