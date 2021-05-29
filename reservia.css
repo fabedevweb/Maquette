@@ -85,8 +85,14 @@ h1 {
 }
 
 .form_champ {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  box-sizing: content-box;
   width: 350px;
+  background-color: rebeccapurple;
+  border: 1px solid white;
+  box-shadow: 0 0 0 3px red inset;
 }
 
 .form_en {
@@ -95,13 +101,12 @@ h1 {
 
 .form_Marseille {
   padding-right: 55px;
-  box-sizing: border-box;
   margin: 0;
   font-size: 1em;
   font-weight: 800;
   text-align: start;
   padding-left: 15px;
-  border: 1px solid #d9d9d9;
+  border: none;
 }
 
 .fa-search {
