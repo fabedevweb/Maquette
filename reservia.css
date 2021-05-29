@@ -105,7 +105,6 @@ h1 {
 }
 
 .form_Marseillebis {
-  color: #0065fc;
   padding-right: 55px;
   box-sizing: border-box;
   margin: 0;
@@ -113,7 +112,7 @@ h1 {
   font-weight: 800;
   text-align: start;
   padding-left: 15px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
 }
 
 .fa-search {
@@ -126,8 +125,8 @@ h1 {
   margin: 0;
   font-size: 1em;
   font-weight: 300;
-  border: 1px none #0065fc;
-  background-color: #0065fc;
+  border: none;
+  background-color: red;
   color: white;
   border-radius: 0 10px 10px 0;
 }
