@@ -93,7 +93,7 @@ h1 {
   grid-template-columns: 40px 1fr;
   grid-template-rows: 46px;
   box-sizing: content-box;
-  width: 250px;
+  width: 350px;
   height: 46px;
   border: 1px #f2f2f2 solid;
   border-radius: 15px;
@@ -117,7 +117,7 @@ h1 {
   position: absolute;
   z-index: 1;
   height: 48px;
-  margin-left: 200px;
+  margin-left: 300px;
   padding: 10px 10px;
   font-size: 1em;
   font-weight: 300;
@@ -796,21 +796,8 @@ footer div {
   }
 
   form {
-    width: 90%;
+    width: 80%;
     margin: auto;
-    font-size: 1.4rem;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-
-  .form_champ {
-    display: flex;
-    width: 90%;
-    margin: auto;
-  }
-
-  .form_Marseille {
-    flex: 1;
   }
 
   #filtre {
@@ -991,25 +978,8 @@ footer div {
     font-size: 1.2rem;
   }
 
-  form {
-    text-align: left;
-    width: 80%;
-  }
-
-  .form_champ {
-    border-top: #f2f2f2 1px solid;
-    border-bottom: #f2f2f2 1px solid;
-    border-radius: 15px 15px;
-    width: auto;
-  }
-
   .fa-map-marker-alt {
-    padding: 15px 20px;
     border-radius: 15px 0 0 15px;
-  }
-
-  .form_Marseille {
-    border: none;
   }
 
   button {
@@ -1028,7 +998,7 @@ footer div {
     color: white;
     background-color: #0065fc;
     border-radius: 15px 15px 15px 15px;
-    padding: 17px;
+    padding: 16px;
   }
 
   #filtres {
@@ -1188,7 +1158,7 @@ footer div {
 
   form {
     text-align: left;
-    width: 90%;
+    width: 80%;
   }
 
   .form_champ {
@@ -1197,13 +1167,7 @@ footer div {
     border-radius: 15px 15px;
   }
 
-  .form_Marseille {
-    padding: 15px;
-    width: 100px;
-  }
-
   .fa-map-marker-alt {
-    padding: 15px 20px;
     border-radius: 15px 0 0 15px;
   }
 
@@ -1380,6 +1344,10 @@ footer div {
 @media screen and (max-width: 375px) {
   #bloc_page {
     width: 100%;
+  }
+
+  form {
+    width: 90%;
   }
 
   .form_Marseille {
