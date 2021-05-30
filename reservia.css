@@ -89,7 +89,6 @@ h1 {
 }
 
 .form_champ {
-  position: absolute;
   display: grid;
   grid-template-columns: 40px 1fr;
   grid-template-rows: 46px;
@@ -97,7 +96,7 @@ h1 {
   width: 250px;
   height: 46px;
   border: 1px #f2f2f2 solid;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .form_en {
