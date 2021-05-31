@@ -523,7 +523,7 @@ nav p {
 
 footer {
   background-color: #f2f2f2;
-  height: 200px;
+  height: 230px;
   margin-top: 60px;
   padding-top: 30px;
 }
@@ -752,7 +752,8 @@ footer div {
 
 @media screen and (max-width: 991.98px) {
   #bloc_page {
-    width: 100%;
+    min-width: 991.98px;
+    width: 90%;
   }
 
   #header {
@@ -955,6 +956,7 @@ footer div {
 
   footer {
     height: auto;
+    min-width: 991.98px;
     width: 100%;
   }
   #footer_parent {
@@ -966,6 +968,7 @@ footer div {
 
 @media screen and (max-width: 767.98px) {
   #bloc_page {
+    min-width: 767.98px;
     width: 100%;
   }
 
@@ -1138,6 +1141,8 @@ footer div {
 
   footer {
     height: auto;
+    width: 100%;
+    min-width: 767.98px;
   }
   #footer_parent {
     height: 400px;
@@ -1147,6 +1152,11 @@ footer div {
 }
 
 @media screen and (max-width: 575.98px) {
+  #bloc_page {
+    min-width: 575.98px;
+    width: 100%;
+  }
+
   #header {
     line-height: 50px;
     margin-bottom: 30px;
@@ -1332,6 +1342,8 @@ footer div {
 
   footer {
     height: 600px;
+    width: 100%;
+    min-width: 575.98px;
   }
 
   #footer1,
@@ -1344,6 +1356,7 @@ footer div {
 @media screen and (max-width: 375px) {
   #bloc_page {
     width: 100%;
+    min-width: 404px;
   }
 
   form {
@@ -1398,16 +1411,16 @@ footer div {
     width: 100%;
   }
 
-  #aside_title_ {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
   #ancre_hebergements {
     margin-left: 0px;
   }
 
   .hebergement_afficher_plus {
     margin-left: 0px;
+  }
+
+  footer {
+    width: 100%;
+    min-width: 404px;
   }
 }
