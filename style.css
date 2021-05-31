@@ -799,6 +799,7 @@ footer div {
   form {
     width: 80%;
     margin: auto;
+    padding-bottom: 30px;
   }
 
   #filtre {
@@ -1355,7 +1356,7 @@ footer div {
 
 @media screen and (max-width: 480px) {
   #bloc_page {
-    width: auto;
+    width: 100%;
   }
 
   #logo {
