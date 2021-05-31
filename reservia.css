@@ -89,35 +89,35 @@ h1 {
 }
 
 .form_champ {
-  display: grid;
-  grid-template-columns: 40px 1fr;
-  grid-template-rows: 46px;
-  box-sizing: content-box;
-  width: 350px;
+  display: flex;
+  width: 50%;
   height: 46px;
-  border: 1px #f2f2f2 solid;
-  border-radius: 15px;
 }
 
 .form_en {
   font-weight: 200;
 }
 
+input {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
 .form_Marseille {
   margin: 0;
-  width: 300px;
+  width: auto;
   font-size: 1em;
   font-weight: 800;
   text-align: start;
   padding-left: 15px;
-  border: none;
+  border-top: #f2f2f2 2px solid;
+  border-bottom: #f2f2f2 2px solid;
+  border-left: none;
+  border-right: none;
 }
 
 .form_recherche {
-  position: absolute;
-  z-index: 1;
-  height: 48px;
-  margin-left: 300px;
+  height: auto;
   padding: 10px 10px;
   font-size: 1em;
   font-weight: 300;
