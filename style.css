@@ -767,7 +767,7 @@ footer div {
   }
 
   #logo {
-    margin-left: 10%;
+    margin-left: 20%;
   }
 
   .ul_hover_hebergements {
@@ -777,7 +777,7 @@ footer div {
 
   .ul_hover_inscrire {
     text-align: end;
-    margin-right: 10%;
+    margin-right: 20%;
   }
 
   .ul_hover_activites,
@@ -1353,14 +1353,35 @@ footer div {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   #bloc_page {
-    width: 100%;
-    min-width: 404px;
+    width: auto;
+  }
+
+  #logo {
+    margin-left: 40%;
+  }
+
+  #header {
+    height: 150px;
+    width: auto;
+  }
+
+  .ul_hover_inscrire {
+    margin-right: 40%;
+    align-self: center;
+  }
+
+  .ul_hover_activites {
+    padding: 15px 100px 0 0;
+  }
+
+  .ul_hover_hebergements {
+    padding: 15px 0px 0 100px;
   }
 
   form {
-    width: 90%;
+    width: 60%;
   }
 
   .form_Marseille {
@@ -1383,9 +1404,18 @@ footer div {
     display: grid;
     grid-template-columns: 190px 150px;
     grid-template-rows: 20px 50px 50px 50px;
-    width: 90%;
+    width: 60%;
     margin: auto;
   }
+
+  #info {
+    width: 60%;
+  }
+
+  #aside_title_ {
+    width: 60%;
+  }
+
   nav p {
     padding: 8px 0px 8px 30px;
   }
@@ -1412,15 +1442,23 @@ footer div {
   }
 
   #ancre_hebergements {
-    margin-left: 0px;
+    margin: auto;
+    width: 67%;
+  }
+
+  #contener_hebergement {
+    margin-top: 20px;
   }
 
   .hebergement_afficher_plus {
-    margin-left: 0px;
+    margin-left: 17%;
   }
 
   footer {
-    width: 100%;
-    min-width: 404px;
+    width: auto;
+  }
+
+  #footer_parent {
+    width: 60%;
   }
 }
