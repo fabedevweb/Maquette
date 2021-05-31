@@ -1250,7 +1250,7 @@ footer div {
   }
 
   #aside_title_ {
-    width: 80%;
+    width: 60%;
     justify-content: space-between;
     margin: auto;
   }
@@ -1266,7 +1266,7 @@ footer div {
   }
 
   #ancre_hebergements {
-    margin-left: 0px;
+    margin-left: 17%;
   }
 
   .hebergement_img {
@@ -1337,7 +1337,7 @@ footer div {
   }
 
   .hebergement_afficher_plus {
-    margin-left: 0px;
+    margin-left: 17%;
   }
 
   footer {
