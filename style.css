@@ -551,7 +551,7 @@ footer div {
     display: block;
     display: grid;
     grid-template-columns: 50px 190px 160px 190px 260px;
-    grid-template-rows: 1;
+    grid-template-rows: 1fr;
   }
 
   #hebergement {
