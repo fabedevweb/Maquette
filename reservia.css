@@ -106,17 +106,11 @@ input {
 
 .form_Marseille {
   margin: 0;
-  width: auto;
   font-size: 1em;
   font-weight: 800;
-  text-align: start;
   padding-left: 15px;
-  border-top: #f2f2f2 2px solid;
-  border-bottom: #f2f2f2 2px solid;
-  border-left: none;
-  border-right: none;
+  border: 1px solid #f2f2f2;
 }
-
 .form_recherche {
   height: auto;
   padding: 10px 10px;
