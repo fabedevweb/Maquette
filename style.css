@@ -1357,7 +1357,6 @@ footer div {
 @media screen and (max-width: 480px) {
   #bloc_page {
     width: 100%;
-    min-width: 404px;
   }
 
   .form_trouver {
