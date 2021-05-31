@@ -1160,7 +1160,9 @@ footer div {
 
   #header {
     line-height: 50px;
-    margin-bottom: 30px;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
   }
 
   #header a {
@@ -1246,7 +1248,7 @@ footer div {
 
   #aside_populaires {
     order: 1;
-    width: 100%;
+    width: 80%;
     border-radius: 0;
   }
 
@@ -1267,7 +1269,8 @@ footer div {
   }
 
   #ancre_hebergements {
-    margin-left: 0px;
+    margin: auto;
+    width: 90%;
   }
 
   .hebergement_img {
@@ -1338,13 +1341,16 @@ footer div {
   }
 
   .hebergement_afficher_plus {
-    margin-left: 0px;
+    margin-left: 18%;
   }
 
   footer {
     height: 600px;
     width: 100%;
     min-width: 575.98px;
+  }
+  #footer_parent {
+    width: 80%;
   }
 
   #footer1,
