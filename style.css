@@ -1031,18 +1031,31 @@ footer div {
     height: 54px;
   }
 
+  input {
+    -webkit-border-radius:0; 
+    border-radius:0;
+}
+
   .fa-search {
-    order: 3;
+    position: absolute;
+    z-index: 1;
     visibility: visible;
     color: white;
     background-color: #0065fc;
     border-radius: 15px 15px 15px 15px;
-    padding: 15px;
+    padding: 16px;
+    margin-left: 290px;
   }
 
   .form_champ {
     display: flex;
     width: 334px;
+    border: none;
+  }
+
+  .form_Marseille{
+    border-top: #f2f2f2 1px solid;
+    border-bottom: #f2f2f2 1px solid;
   }
 
   .form_recherche {
