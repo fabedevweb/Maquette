@@ -42,6 +42,7 @@ nav a {
 
 #logo {
   float: left;
+  padding-top: 20px;
 }
 
 .ul_hover_activites,
@@ -49,6 +50,7 @@ nav a {
   float: right;
   padding-right: 30px;
   padding-left: 30px;
+  padding-top: 20px;
 }
 
 .ul_hover_hebergements:hover {
@@ -66,6 +68,7 @@ nav a {
   color: #0065fc;
   font-weight: 600;
   padding: 0;
+  padding-top: 20px;
   margin-left: 20px;
 }
 
@@ -165,6 +168,7 @@ h1 {
   z-index: 1;
   font-size: 1.3rem;
   margin-top: 1px;
+  vertical-align: top;
 }
 
 .fa-circle {
@@ -270,22 +274,17 @@ nav p {
   color: #0065fc;
 }
 
-/* Le groupe '.stars' positionne les étoiles
-		 les unes à côté des autres sans espacements. */
+/* Positionne les étoiles les unes à côté des autres sans espacements */
 .stars {
   display: inline-flex;
   font-size: 1em;
   padding-left: 0px;
 }
 
-/* A l'état :hover sur le parent '.rating',
-		 on force TOUTES les étoiles à passer en bleu. */
+/* Force toutes les étoiles à passer en bleu */
 .stars:hover .fa-star {
   color: #0065fc;
 }
-/* Et si la souris survole une étoile en particulier,
-		 on sélectionne toutes les étoiles qui sont APRÈS celle-ci
-		 grâce à l'opérateur '~' et on les force en GRIS */
 .stars .fa-star:hover ~ .fa-star {
   color: #d9d9d9;
 }
@@ -842,6 +841,7 @@ footer div {
   form {
     margin: auto;
     padding-bottom: 30px;
+    padding-top: 50px;
   }
 
   #filtre {
